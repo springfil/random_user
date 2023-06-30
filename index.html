@@ -7,10 +7,9 @@
     <title>Random User Generator</title>
   </head>
   <body>
-    <!-- все выплевывается в этот див -->
     <div id="app">
         <img :class="gender" v-bind:src="picture" :alt="`${firstName} ${lastName}`" />
-        <h2>{{firstName}} {{lastName}}</h2>;
+        <h2>{{firstName}} {{lastName}}</h2>
         <button v-on:click="getUser()" :class="gender">Random</button>
     </div>
     <script src="https://unpkg.com/vue@3.0.5"></script>
